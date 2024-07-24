@@ -4,6 +4,7 @@ from scripts.brain_even import even
 from scripts.brain_calc import calc
 from scripts.brain_gcd import gcd
 from scripts.brain_progression import progression
+from scripts.brain_prime import prime
 
 
 def main():
@@ -12,8 +13,8 @@ def main():
     # even()
     # calc()
     # gcd()
-    progression()
-
+    # progression()
+    prime()
 
 if __name__ == '__main__':
     main()
