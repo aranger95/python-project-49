@@ -21,3 +21,12 @@ brain-even:
 
 brain-calc:
 	poerty run brain-calc
+
+brain-bcd:
+	poetry run brain-bcd
+
+rebuild:
+	python3 -m pip install --user --force-reinstall dist/*.whl
+
+brain-progression:
+	poetry run brain-progression
