@@ -1,4 +1,4 @@
-import games.game_exodus, games.game_gcd
+import brain_games.games.game_exodus, brain_games.games.game_gcd
 
 def gcd():
-    games.game_gcd.gcd()
+    brain_games.games.game_gcd.gcd()

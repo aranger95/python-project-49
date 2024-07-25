@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
-from scripts.brain_even import even
-from scripts.brain_calc import calc
-from scripts.brain_gcd import gcd
-from scripts.brain_progression import progression
-from scripts.brain_prime import prime
+from brain_games.scripts.brain_even import even
+from brain_games.scripts.brain_calc import calc
+from brain_games.scripts.brain_gcd import gcd
+from brain_games.scripts.brain_progression import progression
+from brain_games.scripts.brain_prime import prime
 
 
 def main():

@@ -1,4 +1,4 @@
-import random, prompt, games.game_exodus, math
+import random, prompt, brain_games.games.game_exodus, math
 
 
 def is_prime(number):
@@ -25,14 +25,14 @@ def prime():
 
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
-            games.game_exodus.defeat()
+            brain_games.games.game_exodus.defeat()
             break
         elif answer == correct_answer:
             print('Correct!')
             score += 1
         else:
             print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
-            games.game_exodus.defeat()
+            brain_games.games.game_exodus.defeat()
             break
             
     if score == 3:

@@ -1,4 +1,4 @@
-import random, prompt, games.game_exodus
+import random, prompt, brain_games.games.game_exodus
 
 
 def even():
@@ -19,9 +19,9 @@ def even():
             score += 1
         else:
             print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
-            games.game_exodus.defeat()
+            brain_games.games.game_exodus.defeat()
             break
             
     if score == 3:
-        games.game_exodus.winning()
+        brain_games.games.game_exodus.winning()
 

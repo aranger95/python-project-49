@@ -1,5 +1,5 @@
-import games.game_exodus, games.game_calc
+import brain_games.games.game_exodus, brain_games.games.game_calc
 
 
 def calc():
-    games.game_calc.calc()
+    brain_games.games.game_calc.calc()
