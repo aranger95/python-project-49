@@ -2,7 +2,7 @@ import random, prompt, brain_games.games.game_exodus
 
 
 def even():
-    print('Answer \"yes\" if the number is even, otherwise answer \"no\"')
+    print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
     score = 0
     RIGHT_ANSWERS = ('yes', 'no')
     while score != 3:
