@@ -36,4 +36,4 @@ def prime():
             break
             
     if score == 3:
-        games.game_exodus.winning()
+        brain_games.games.game_exodus.winning()
