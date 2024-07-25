@@ -10,11 +10,11 @@ from brain_games.scripts.brain_prime import prime
 def main():
     print('Welcome to the Brain Games!')
     welcome_user()
-    even()
-    calc()
-    gcd()
-    progression()
-    prime()
+    # even()
+    # calc()
+    # gcd()
+    # progression()
+    # prime()
 
 if __name__ == '__main__':
     main()
