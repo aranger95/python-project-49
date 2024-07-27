@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import brain_games.games.game_calc
+from brain_games.games.game_calc import calc
 
 
 def main():
-    brain_games.games.game_calc.calc()
+    calc()
 
 
 if __name__ == '__main__':
