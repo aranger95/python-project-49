@@ -1,10 +1,10 @@
-import random, prompt, brain_games.games.game_exodus
-
+import random, prompt
+from brain_games.cli import welcome_user
 
 def calc():
+    nickname = welcome_user()
     print('What is the result of the expression?')
     score = 0
-    seq = '+-*'
     while score != 3:
         num_1 = random.randint(1, 25)
         num_2 = random.randint(1, 25)
@@ -26,8 +26,8 @@ def calc():
             score += 1
         else:
             print(f'"{answer}" is wrong answer ;(. Correct answer was "{result}".')
-            brain_games.games.game_exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
             
     if score == 3:
-        brain_games.games.game_exodus.winning()
+        print(f'Congratulations, {nickname}!')

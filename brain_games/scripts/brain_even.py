@@ -1,5 +1,10 @@
-import brain_games.games.game_exodus, brain_games.games.game_even
+#!/usr/bin/env python3
+from brain_games.games.game_even import even_game
 
 
-def even():
-    brain_games.games.game_even.even()
+def main():
+    even_game()
+
+
+if __name__ == '__main__':
+    main()

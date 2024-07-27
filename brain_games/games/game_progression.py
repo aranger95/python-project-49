@@ -1,7 +1,9 @@
-import random, prompt, brain_games.games.game_exodus
+import random, prompt
+from brain_games.cli import welcome_user
 
 
 def progression():
+    nickname = welcome_user()
     print('What number is missing in the progression?')
     score = 0
     while score != 3:
@@ -17,16 +19,16 @@ def progression():
         print(f'Question: {" ".join(map(str, prog_list))}')
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
-            brain_games.games.game_exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
         elif answer == correct_answer:
             print('Correct!')
             score += 1
         else:
             print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
-            brain_games.games.game_exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
             
     if score == 3:
-        brain_games.games.game_exodus.winning()
+        print(f'Congratulations, {nickname}!')
 

@@ -1,7 +1,9 @@
-import random, prompt, brain_games.games.game_exodus, math
+import random, prompt, math
+from brain_games.cli import welcome_user
 
 
 def gcd():
+    nickname = welcome_user()
     print('Find the greatest common divisor of given numbers.')
     score = 0
     while score != 3:
@@ -16,8 +18,8 @@ def gcd():
             score += 1
         else:
             print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
-            brain_games.games.game_exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
             
     if score == 3:
-        brain_games.games.game_exodus.winning()
+        print(f'Congratulations, {nickname}!')

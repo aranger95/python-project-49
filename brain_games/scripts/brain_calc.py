@@ -1,5 +1,10 @@
-import brain_games.games.game_exodus, brain_games.games.game_calc
+#!/usr/bin/env python3
+from brain_games.games.game_calc import calc
 
 
-def calc():
-    brain_games.games.game_calc.calc()
+def main():
+    calc()
+
+
+if __name__ == '__main__':
+    main()
