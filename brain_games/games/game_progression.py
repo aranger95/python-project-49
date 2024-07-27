@@ -9,7 +9,7 @@ def progression_game():
     while score != 3:
         num_1 = random.randint(0, 100)
         num_2 = random.randint(1, 10)
-        index = random.randint(0, 5)
+        index = random.randint(1, 5)
         quantity = random.randint(5, 10)
         prog_list = []
         for i in range(quantity):
