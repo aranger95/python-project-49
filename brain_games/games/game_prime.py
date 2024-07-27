@@ -23,7 +23,7 @@ def prime_game():
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        print(correct_answer)
+        # print(correct_answer)
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
             print(f'Let\'s try again, {nickname}!')
