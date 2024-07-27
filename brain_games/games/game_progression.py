@@ -1,4 +1,5 @@
-import random, prompt
+import random
+import prompt
 from brain_games.cli import welcome_user
 
 
@@ -28,10 +29,14 @@ def progression_game():
             print('Correct!')
             score += 1
         else:
-            print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
+            print(
+                f'"{answer}" is wrong'
+                ' answer ;(. '
+                'Correct answer '
+                f'was "{correct_answer}".'
+            )
             print(f'Let\'s try again, {nickname}!')
             break
-            
+
     if score == 3:
         print(f'Congratulations, {nickname}!')
-

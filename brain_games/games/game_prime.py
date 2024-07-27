@@ -1,4 +1,6 @@
-import random, prompt, math
+import random
+import prompt
+import math
 from brain_games.cli import welcome_user
 
 
@@ -32,9 +34,14 @@ def prime_game():
             print('Correct!')
             score += 1
         else:
-            print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".')
+            print(
+                f'"{answer}" is wrong'
+                ' answer ;(. '
+                'Correct answer '
+                f'was "{correct_answer}".'
+            )
             print(f'Let\'s try again, {nickname}!')
             break
-            
+
     if score == 3:
-            print(f'Congratulations, {nickname}!')
+        print(f'Congratulations, {nickname}!')
