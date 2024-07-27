@@ -13,7 +13,7 @@ def is_prime(number):
 
 def prime_game():
     nickname = welcome_user()
-    print('Answer \"yes\" if the number is prime, otherwise answer \"no\"')
+    print('Answer \"yes\" if the number is prime, otherwise answer \"no\".')
     score = 0
     while score != 3:
         number = random.randint(0, 100)
