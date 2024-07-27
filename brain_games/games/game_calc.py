@@ -1,7 +1,7 @@
 import random, prompt
 from brain_games.cli import welcome_user
 
-def calc():
+def calc_game():
     nickname = welcome_user()
     print('What is the result of the expression?')
     score = 0

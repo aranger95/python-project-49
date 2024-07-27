@@ -2,7 +2,7 @@ import random, prompt
 from brain_games.cli import welcome_user
 
 
-def progression():
+def progression_game():
     nickname = welcome_user()
     print('What number is missing in the progression?')
     score = 0

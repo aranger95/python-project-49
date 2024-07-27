@@ -2,7 +2,7 @@ import random, prompt, math
 from brain_games.cli import welcome_user
 
 
-def gcd():
+def gcd_game():
     nickname = welcome_user()
     print('Find the greatest common divisor of given numbers.')
     score = 0

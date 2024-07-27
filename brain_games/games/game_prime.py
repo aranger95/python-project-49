@@ -11,7 +11,7 @@ def is_prime(number):
     return True
 
 
-def prime():
+def prime_game():
     nickname = welcome_user()
     print('Answer \"yes\" if the number is prime, otherwise answer \"no\"')
     score = 0
