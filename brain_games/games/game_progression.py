@@ -9,14 +9,17 @@ def progression_game():
     while score != 3:
         num_1 = random.randint(0, 100)
         num_2 = random.randint(1, 10)
-        index = random.randint(1, 5)
+        index = random.randint(1, 4)
         quantity = random.randint(5, 10)
+        # print(index)
         prog_list = []
         for i in range(quantity):
             prog_list.append(num_1 + i * num_2)
+        # print(prog_list)
         correct_answer = str(prog_list[index])
         prog_list[index] = '..'
         print(f'Question: {" ".join(map(str, prog_list))}')
+        # print(correct_answer)
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
             print(f'Let\'s try again, {nickname}!')
