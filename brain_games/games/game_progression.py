@@ -22,7 +22,7 @@ def gen_progression():
     prog_str = " ".join(map(str, prog_list))
     # print(f'Question: {prog_str}')
     # print(correct_answer)
-    return correct_answer, prog_str
+    return prog_str, correct_answer
 
 
 def progression_game():
