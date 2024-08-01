@@ -20,4 +20,4 @@ def game_choice():
     calculate(operator, num_1, num_2)
     expression = f'{num_1} {operator} {num_2}'
     correct_answer = calculate(operator, num_1, num_2)
-    return expression, correct_answer
+    return correct_answer, expression

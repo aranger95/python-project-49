@@ -7,4 +7,4 @@ def game_choice():
     num_2 = random.randint(1, 100)
     correct_answer = math.gcd(num_1, num_2)
     expression = f'{num_1} {num_2}'
-    return expression, correct_answer
+    return correct_answer, expression

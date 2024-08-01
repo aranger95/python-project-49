@@ -23,5 +23,5 @@ def game_choice():
     correct_answer, prog_list, index = generate()
     prog_list[index] = '..'
     prog_str = " ".join(map(str, prog_list))
-    print(correct_answer)
+    # print(correct_answer)
     return correct_answer, prog_str

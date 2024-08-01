@@ -15,4 +15,4 @@ def game_choice():
     number = random.randint(1, 100)
     correct_answer = 'yes' if is_even(number) else 'no'
     # print(correct_answer)
-    return number, correct_answer
+    return correct_answer, number
