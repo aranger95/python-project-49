@@ -7,7 +7,7 @@ def engine(game):
     ROUNDS = 3
 
     while score < ROUNDS:
-        question, correct_answer = game()
+        correct_answer, question = game()
         print(f'Question: {question}')
         # print(correct_answer)
         answer = prompt.string('Your answer: ')
