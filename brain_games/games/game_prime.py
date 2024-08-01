@@ -11,11 +11,7 @@ def is_prime(number):
     return True
 
 
-def prime_game():
+def game_choice():
     number = random.randint(0, 100)
-    flag = is_prime(number)
-    if flag is True:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    correct_answer = 'yes' if is_prime(number) else 'no'
     return number, correct_answer

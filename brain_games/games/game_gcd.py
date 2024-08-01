@@ -2,7 +2,7 @@ import random
 import math
 
 
-def gcd_game():
+def game_choice():
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)
     correct_answer = math.gcd(num_1, num_2)
