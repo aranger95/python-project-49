@@ -6,7 +6,7 @@ QUESTION = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
 def is_prime(number):
-    if number == 0 or number == 1:
+    if number in (0, 1):
         return False
     i = 2
     while i <= math.sqrt(number):
