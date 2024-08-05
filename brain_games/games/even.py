@@ -1,7 +1,7 @@
 import random
 
 
-RIGHT_ANSWERS = ('yes', 'no')
+QUESTION = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
 
 
 def is_even(number):
