@@ -19,7 +19,7 @@ def generate_progression():
 
 
 def game_choice():
-    index = random.randint(MIN_STEP, MAX_STEP)    
+    index = random.randint(MIN_STEP, MAX_STEP)
     prog_list = generate_progression()
     correct_answer = str(prog_list[index])
     prog_list[index] = '..'
