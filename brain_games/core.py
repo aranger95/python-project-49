@@ -1,18 +1,20 @@
 import prompt
-from brain_games.scripts import exodus
+from brain_games.cli import welcome_user
 
 
 def engine(game):
+    nickname = welcome_user()
+    print(game.QUESTION)
     score = 0
     ROUNDS = 3
 
     while score < ROUNDS:
-        correct_answer, question = game()
+        correct_answer, question = game.game_choice()
         print(f'Question: {question}')
         # print(correct_answer)
         answer = prompt.string('Your answer: ')
         if str(answer) != str(correct_answer):
-            exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
         elif str(answer) == str(correct_answer):
             print('Correct!')
@@ -24,7 +26,7 @@ def engine(game):
                 'Correct answer '
                 f'was "{correct_answer}".'
             )
-            exodus.defeat()
+            print(f'Let\'s try again, {nickname}!')
             break
     if score == 3:
-        exodus.win()
+        print(f'Congratulations, {nickname}!')

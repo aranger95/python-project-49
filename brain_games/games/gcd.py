@@ -2,6 +2,9 @@ import random
 import math
 
 
+QUESTION = 'Find the greatest common divisor of given numbers.'
+
+
 def game_choice():
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)
