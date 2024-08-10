@@ -4,6 +4,7 @@ from brain_games import core
 
 
 def main():
+    '''Запускает модуль игры \"Арифметическая прогрессия\" '''
     core.engine(progression)
 
 
