@@ -6,7 +6,11 @@ QUESTION = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
 def is_prime(number):
-    if number in (0, 1):
+    '''
+    Принимает число number, возвращает True, если число четное и 
+    False, если число нечетное
+    '''
+    if number <= 1:
         return False
     i = 2
     while i <= math.sqrt(number):
@@ -17,6 +21,8 @@ def is_prime(number):
 
 
 def game_choice():
+    '''
+    Возвращает правильный ответ и вопрос задачи
+    '''
     number = random.randint(0, 100)
-    correct_answer = 'yes' if is_prime(number) else 'no'
-    return correct_answer, number
+    return 'yes' if is_prime(number) else 'no', number
