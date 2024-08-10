@@ -7,7 +7,7 @@ QUESTION = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 def is_prime(number):
     '''
-    Принимает число number, возвращает True, если число четное и 
+    Принимает число number, возвращает True, если число четное и
     False, если число нечетное
     '''
     if number <= 1:

@@ -8,7 +8,7 @@ QUESTION = 'What number is missing in the progression?'
 
 def generate_progression():
     '''
-    Возвращает сгенерированную прогрессию prog_list с длиной quantity 
+    Возвращает сгенерированную прогрессию prog_list с длиной quantity
     '''
     num_1 = random.randint(0, 100)
     num_2 = random.randint(1, 10)
@@ -24,7 +24,7 @@ def game_choice():
     Возвращает правильный ответ и вопрос задачи
     '''
     prog_list, quantity = generate_progression()
-    index = random.randint(0, quantity-1)
+    index = random.randint(0, quantity - 1)
     correct_answer = prog_list[index]
     prog_list[index] = '..'
     prog_str = " ".join(map(str, prog_list))
