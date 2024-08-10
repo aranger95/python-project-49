@@ -4,6 +4,7 @@ from brain_games import core
 
 
 def main():
+    '''Запускает модуль игры \"Проверка на четность\" '''
     core.engine(even)
 
 
