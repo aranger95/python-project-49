@@ -13,10 +13,7 @@ def engine(game):
         print(f'Question: {question}')
         # print(correct_answer)
         answer = prompt.string('Your answer: ')
-        if str(answer) != str(correct_answer):
-            print(f'Let\'s try again, {nickname}!')
-            break
-        elif str(answer) == str(correct_answer):
+        if str(answer) == str(correct_answer):
             print('Correct!')
             score += 1
         else:
