@@ -1,13 +1,20 @@
 from random import randint
 
 
-QUESTION = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def is_even(number):
+    '''
+    Performs a number check for parity.
+    '''
+    return number % 2 == 0
 
 
 def game_choice():
     '''
-    Возвращает правильный ответ и вопрос задачи
+    Returns the correct answer and the question of the task.
     '''
     number = randint(1, 100)
-    correct_answer = 'yes' if number % 2 == 0 else 'no'
+    correct_answer = 'yes' if is_even(number) else 'no'
     return correct_answer, number

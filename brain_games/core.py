@@ -3,6 +3,9 @@ from brain_games.cli import welcome_user
 
 
 def engine(game):
+    '''Accepts the module of the selected game,
+    contains the basic logic of the games.
+    '''
     nickname = welcome_user()
     print(game.QUESTION)
     score = 0
@@ -11,7 +14,6 @@ def engine(game):
     while score < ROUNDS:
         correct_answer, question = game.game_choice()
         print(f'Question: {question}')
-        # print(correct_answer)
         answer = prompt.string('Your answer: ')
         if str(answer) == str(correct_answer):
             print('Correct!')
