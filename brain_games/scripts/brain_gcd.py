@@ -4,7 +4,7 @@ from brain_games.core import engine
 
 
 def main():
-    '''Запускает модуль игры \"Наибольший общий делитель\" '''
+    '''Launches the "Greatest Common Divisor" game module.'''
     engine(gcd)
 
 

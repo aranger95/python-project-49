@@ -7,7 +7,7 @@ QUESTION = 'Find the greatest common divisor of given numbers.'
 
 def game_choice():
     '''
-    Возвращает правильный ответ и вопрос задачи
+    Returns the correct answer and the question of the task.
     '''
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)

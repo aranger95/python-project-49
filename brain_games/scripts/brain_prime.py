@@ -4,7 +4,7 @@ from brain_games.core import engine
 
 
 def main():
-    '''Запускает модуль игры \"Простое ли число?\" '''
+    '''Launches the module of the game "Is a prime number?".'''
     engine(prime)
 
 

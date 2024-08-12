@@ -7,8 +7,8 @@ QUESTION = 'What is the result of the expression?'
 
 def calculate(operation: str, num_1: int, num_2: int):
     '''
-    Принимает числа num_1 и num_2 и математический оператор,
-    возвращает результат сложения, вычитания или умножения
+    Accepts the numbers num_1 and num_2 and a mathematical operator,
+    returns the result of addition, subtraction or multiplication.
     '''
     if operation == '+':
         return num_1 + num_2
@@ -20,7 +20,7 @@ def calculate(operation: str, num_1: int, num_2: int):
 
 def game_choice():
     '''
-    Возвращает правильный ответ и вопрос задачи
+    Returns the correct answer and the question of the task.
     '''
     num_1 = random.randint(1, 25)
     num_2 = random.randint(1, 25)
